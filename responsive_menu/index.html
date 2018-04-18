@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsive Side Menu</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSideMenu()">
+        <svg width = '30' height='30'>
+          <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+          <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+          <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+
+    <ul class="navbar-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <div id="main">
+    <h1>Responsive Side Menu</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus accusantium ratione quas esse fugiat dolores perspiciatis amet ad possimus error consequatur excepturi enim et beatae odit nesciunt, ipsum voluptas aspernatur nisi optio dolorum officia itaque nobis. Optio officiis inventore fugiat quasi corporis ducimus labore minima molestias reprehenderit dolorum hic illum explicabo recusandae sed, laboriosam enim, aspernatur facilis obcaecati tenetur perferendis accusamus nemo. Nobis, neque culpa nisi, provident odio quam, temporibus saepe eos officia libero illum nam pariatur animi earum consequatur illo? Consequuntur, earum ullam at ducimus dolor quis odio commodi quisquam corrupti pariatur! Velit eligendi obcaecati ut nesciunt dolor explicabo aperiam officiis quidem enim hic, quis iure aspernatur pariatur animi. Illo nulla atque quia veritatis, esse odit voluptatem tempore sint voluptatibus saepe pariatur nostrum eos officiis, consequuntur eius earum exercitationem! Aliquam eum et id nihil, ipsa suscipit libero? Blanditiis itaque quos odit reiciendis, necessitatibus, soluta praesentium provident fugit totam repudiandae ad harum veritatis. Voluptate vero exercitationem quibusdam sit blanditiis voluptatibus, odio officia commodi ipsa aperiam saepe, facere repellat placeat nemo illo atque eligendi fugiat laudantium perferendis hic, est maiores? Animi tenetur, aliquid laudantium adipisci minus consequatur dolorum explicabo possimus. Ratione fugiat animi, dolorum saepe rerum enim similique vel labore facilis! Excepturi animi veritatis optio quam suscipit, quod labore vitae ullam. Tenetur perspiciatis culpa nulla praesentium eum quas. Placeat eligendi dolore a dicta nulla assumenda officia voluptatibus reiciendis delectus modi, explicabo similique enim autem nobis voluptatem maxime, minima quae repudiandae. Distinctio repellat numquam quidem ab iure adipisci quae commodi doloremque, asperiores at hic molestias accusantium facere consequatur similique inventore itaque illo rerum eligendi dolores perferendis. Minima tempore neque dolorum quisquam nemo optio cum, quia magni saepe ullam labore voluptatum non dolore sint eveniet reprehenderit quidem aperiam commodi maiores iure dolor, voluptate ipsum? Sequi, aspernatur possimus modi voluptatem aut nulla adipisci quis et eaque esse tenetur fugit nostrum veritatis numquam exercitationem, suscipit nam vitae ipsa delectus. Laudantium commodi aperiam cupiditate? Porro et quas maxime, tempore blanditiis architecto necessitatibus dolorum sit alias, explicabo non aliquid velit ipsam qui deserunt minus doloremque. Id aliquam amet assumenda reprehenderit repudiandae consectetur, neque ipsa maxime asperiores inventore beatae porro sed hic repellendus repellat, vero, necessitatibus est corporis fugiat eligendi et animi modi quis! Natus totam, aut adipisci reprehenderit nemo nam recusandae soluta quidem vitae deserunt est! Ad recusandae voluptatem natus, similique quae molestias atque distinctio in blanditiis porro odio. Odit iure voluptate eaque. Earum maiores consectetur dolorem voluptatibus magni unde odit commodi omnis? Quidem ipsa animi ea nemo quisquam temporibus aperiam. Eum modi, quidem explicabo quae dolores autem nostrum natus consequuntur hic magnam fugit enim totam tempora asperiores nemo accusamus ipsum? Dignissimos, a aperiam nostrum, dolor cum enim asperiores magni, ex cumque illum sapiente? Aliquid facere iusto quod fugiat eaque. Placeat impedit animi et voluptates neque nulla temporibus at exercitationem, hic rerum omnis nostrum voluptatum vero illo ullam in velit tenetur eius ipsam aliquid! Quasi dolorum quos sunt excepturi accusantium aspernatur quidem magnam dignissimos fugit odit ullam, id maiores natus culpa nihil modi quas repellat ipsam nulla.</p>
+  </div>
+
+  <script>
+    function openSideMenu() {
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSideMenu() {
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+</body>
+</html>
